@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using GoMVC.Models;
+
+namespace GoMVC.Controllers
+{
+    public class MoviesController : Controller
+    {
+        //
+        // GET: /Movies/
+        public ActionResult Random()
+        {
+            var movie = new Movie() { Name = "A-TEAM" };
+
+            return View(movie);
+        }
+	}
+}
